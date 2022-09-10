@@ -1,0 +1,25 @@
+<!-- <div class="pie-wrapper">
+  <ngx-charts-pie-chart
+    [results]="data"
+    [animations]="false"
+    [legend]="true"
+    legendTitle=""
+    [legendPosition]="legendPosition"
+    *ngIf="loadTable"
+  >
+  </ngx-charts-pie-chart>
+</div> -->
+<div class="pie-wrapper" *ngIf="loadTable">
+  <ejs-accumulationchart [legendSettings]="legend">
+    <e-accumulation-series-collection>
+      <e-accumulation-series
+        type="Pie"
+        [dataSource]="data"
+        xName="name"
+        yName="value"
+        [dataLabel]="chartLabel"
+      >
+      </e-accumulation-series>
+    </e-accumulation-series-collection>
+  </ejs-accumulationchart>
+</div>

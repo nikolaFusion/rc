@@ -1,0 +1,58 @@
+:host {
+    width: 100%;
+    display: flex;
+}
+
+tr {
+    width: 450px;
+}
+
+.middle-text {
+    text-align: center;
+}
+
+.start-text {
+    text-align: start;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+th,
+td,
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td {
+    width: 300px;
+}
+
+.time-column {
+    width: 300px;
+}
+
+.name-column {
+    width: 400px;
+}
+
+.margin-field {
+    width: 200px;
+}
+
+th {
+    background-color: #eae7e7;
+}
+
+table {
+    margin: 100px auto;
+    font-size: 18px;
+    height: 500px;
+}
+
+.red-class {
+    background-color: #ecac9e;
+}
